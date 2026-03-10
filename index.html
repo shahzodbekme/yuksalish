@@ -1,46 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mening saytim</title>
+<title>Yangiliklar sayti</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
 body{
-background: linear-gradient(135deg,#6dd5ed,#2193b0);
-text-align:center;
+margin:0;
 font-family:Arial;
+background:#f2f2f2;
+}
+
+header{
+background:#d10000;
 color:white;
-padding:30px;
+padding:15px;
+text-align:center;
+font-size:28px;
 }
 
-h1{
-font-size:50px;
+nav{
+background:#333;
+padding:10px;
+text-align:center;
 }
 
-p{
-font-size:22px;
-}
-
-img{
-width:300px;
-border-radius:15px;
-box-shadow:0px 10px 25px rgba(0,0,0,0.3);
-}
-
-button{
-background:#ff4b2b;
+nav a{
 color:white;
-border:none;
-padding:15px 30px;
+margin:15px;
+text-decoration:none;
 font-size:18px;
-border-radius:10px;
-cursor:pointer;
 }
 
-button:hover{
-background:#ff416c;
+nav a:hover{
+color:red;
+}
+
+.container{
+width:90%;
+margin:auto;
+margin-top:20px;
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:20px;
+}
+
+.news{
+background:white;
+padding:15px;
+border-radius:5px;
+}
+
+.news img{
+width:100%;
+border-radius:5px;
+}
+
+.news h2{
+margin:10px 0;
+}
+
+.sidebar{
+background:white;
+padding:15px;
+border-radius:5px;
+}
+
+.footer{
+background:#222;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
 }
 
 </style>
@@ -49,14 +82,48 @@ background:#ff416c;
 
 <body>
 
-<h1>Salom</h1>
-<p>Bu mening web saytim</p>
+<header>
+YANGILIKLAR
+</header>
 
-<img src="rasm.png">
+<nav>
+<a href="#">Asosiy</a>
+<a href="#">O‘zbekiston</a>
+<a href="#">Dunyo</a>
+<a href="#">Sport</a>
+<a href="#">Texnologiya</a>
+</nav>
 
-<br><br>
+<div class="container">
 
-<button>Bos</button>
+<div class="news">
+
+<img src="https://picsum.photos/800/400">
+
+<h2>Bugungi muhim yangilik</h2>
+
+<p>
+Bu yerda yangilik matni yoziladi. Siz xohlagan yangilikni shu yerga yozishingiz mumkin.
+</p>
+
+</div>
+
+<div class="sidebar">
+
+<h3>So‘nggi yangiliklar</h3>
+
+<p>• Yangi loyiha ishga tushdi</p>
+<p>• Sport yangiliklari</p>
+<p>• Texnologiya yangiliklari</p>
+<p>• Dunyo yangiliklari</p>
+
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 Yangiliklar sayti
+</div>
 
 </body>
 </html>
