@@ -1,131 +1,202 @@
 <!DOCTYPE html>
-<html>
 <head>
-<title>Yangiliklar sayti</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-
-body{
-margin:0;
-font-family:Arial;
-background:#f2f2f2;
-}
-
-header{
-background:#d10000;
-color:white;
-padding:15px;
-text-align:center;
-font-size:28px;
-}
-
-nav{
-background:#333;
-padding:10px;
-text-align:center;
-}
-
-nav a{
-color:white;
-margin:15px;
-text-decoration:none;
-font-size:18px;
-}
-
-nav a:hover{
-color:red;
-}
-
-.container{
-width:90%;
-margin:auto;
-margin-top:20px;
-display:grid;
-grid-template-columns:2fr 1fr;
-gap:20px;
-}
-
-.news{
-background:white;
-padding:15px;
-border-radius:5px;
-}
-
-.news img{
-width:100%;
-border-radius:5px;
-}
-
-.news h2{
-margin:10px 0;
-}
-
-.sidebar{
-background:white;
-padding:15px;
-border-radius:5px;
-}
-
-.footer{
-background:#222;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:30px;
-}
-
-</style>
-
+    <title>
+        Exercise for HTML and CSS
+    </title>
 </head>
 
 <body>
 
-<header>
-YANGILIKLAR
-</header>
+<style>
 
-<nav>
-<a href="index.html">Asosiy</a>
-<a href="yangilik.html">O‘zbekiston</a>
-<a href="#">Dunyo</a>
-<a href="#">Sport</a>
-<a href="#">Texnologiya</a>
-</nav>
+    .request-now:hover{
+      opacity: o.7;
+    }
+    .request-now:active{
+        opacity: 0.2;
+        background-color: rgb(251, 248, 248);
+        color:rgb(250, 248, 248);
+    }
+    .request-now {
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: background-color 56s;
+    vertical-align: top;
+    }
+    .add-to-card:hover{
+        opacity: 0.7;
+    }
+    .add-to-card:active{
+        opacity: 0.2;
+    }
 
-<div class="container">
+      
+    .add-to-card{
+    background-color: rgb(255, 255, 0);
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    border-style: solid;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: arial;
+    font-style: bold;
+    transition: background-color 0.15s;
+   }
+   .sign-up:hover{
+    opacity: 1;
+   }
+   .sign-up:active{
+    opacity: 0.3
+   }
+   .sign-up{
+    background: rgb(46, 164, 79);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: arial;
+    font-style: bold;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: background-color 15s;
+   }
+   .get-started:active{
+    opacity: 0.4;
+   }
+   .get-started{
+    background-color: rgb(121, 82,179);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-right: 7px;
+    color: white;
+    font-family: arial;
+    font-style: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   }
 
-<div class="news">
+   .download:hover{
+    background-color:black;
+    color: white;
+    opacity: 0.7;
+   }
 
-<img src="https://picsum.photos/800/400">
+   .download:active{
+    background-color:black;
+    color: white;
+    opacity: 0.2;
+   }
+   .download{
+    background-color:white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    margin-top: 20px;
+    color: black;
+    font-family: arial;
+    font-style: bold;
+    border: 0.01;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 1s;
+    }
 
-<h2>Bugungi muhim yangilik</h2>
+    .company-website:hover{
+        background-color: rgb(34, 89, 144);
+    }
+    .company-website{
+    background-color: rgb(14, 130, 246);
+    margin-top: 15px;
+    color: white;
+    border: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left:20px;
+    border-radius: 30px;
+    margin-right: 10px;
+    cursor: pointer;
 
-<p>
-Bu yerda yangilik matni yoziladi. Siz xohlagan yangilikni shu yerga yozishingiz mumkin.
-</p>
+    }
 
-</div>
 
-<div class="sidebar">
+    .save{
+    background-color: rgb(251, 251, 251); 
+    color: rgb(10,102,194);
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: solid;
+    font-weight: bold;
+    font-size: 15px;
+    border: 0.1;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    padding-right: 25px;
+    padding-left:25px;
+    border-radius: 20px;
+    border-color: rgb(10,102,194);
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: box-shadow 0.15s;
+    }
+    .save:hover{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.15);
 
-<h3>So‘nggi yangiliklar</h3>
+    }
+    .subscribe:hover{
+        background-color: rgb(10,102,194);
+        color:white;
+        opacity:0.7;
+    }
+    .subscribe:active{
+        opacity: 0.5;
+    }
 
-<p>• Yangi loyiha ishga tushdi</p>
-<p>• Sport yangiliklari</p>
-<p>• Texnologiya yangiliklari</p>
-<p>• Dunyo yangiliklari</p>
+    .subscribe{
+    background-color: rgb(168, 7, 7);
+    color: white;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 7px;
+    }
+</style>
 
-</div>
-
-</div>
-
-<div class="footer">
-© 2026 Yangiliklar sayti
-</div>
-
+<button class="request-now">Request now</button>
+<button class="add-to-card">Add to cart</button>
+<button class="sign-up">Sign up</button><br>
+<button class="get-started">Get started</button>
+<button class="download">Download</button><br>
+<button class="company-website">Apply on company website</button>
+<button class="save">Save</button><br>
+<button class="subscribe">SUBSCRIBE</button>
 </body>
 </html>
-
-
